@@ -1,6 +1,6 @@
 package com.browslkv.repository;
 
-import com.browslkv.model.Service;
+import com.browslkv.model.Serv;
 import com.browslkv.model.Specialist;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ServiceRepository extends JpaRepository<Service, Long> {
-    List<Service> findBySpecialist(Specialist specialist);
+public interface ServRepository extends JpaRepository<Serv, Long> {
+    List<Serv> findBySpecialist(Specialist specialist);
 }

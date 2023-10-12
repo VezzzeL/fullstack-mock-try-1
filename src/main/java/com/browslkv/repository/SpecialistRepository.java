@@ -11,5 +11,5 @@ import java.util.Optional;
 public interface SpecialistRepository extends JpaRepository<Specialist, Long> {
     List<Specialist> findByLocation(String location);
 
-    Optional<Specialist> findByUserId(Long userId);
+    Optional<Specialist> findByUserUserId(Long userId);
 }

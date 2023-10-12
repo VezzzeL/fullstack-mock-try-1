@@ -20,7 +20,7 @@ public class Specialist {
     private User user;
 
     @OneToMany(mappedBy = "specialist", cascade = CascadeType.ALL)
-    private List<Service> services;
+    private List<Serv> servs;
 
     @Column(name = "location")
     @Size(max = 100, message = "Location should be less than 100 characters")
