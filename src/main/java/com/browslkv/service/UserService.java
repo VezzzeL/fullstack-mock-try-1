@@ -12,7 +12,7 @@ public interface UserService {
 
     Optional<User> getUserById(Long userId);
 
-    Optional<User> getUserByEmail(String email);
+    User getUserByEmail(String email);
 
     List<User> getAllUsers();
 
